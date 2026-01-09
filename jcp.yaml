@@ -1,0 +1,24 @@
+# python3 ~/bin/get-jcp.py
+projects:
+
+# J utils (feel free to remove it you don't need it)
+  jcp-tune:
+    commands:      
+      - subl ~/bin/get-jcp.py
+      - subl ~/bin/jcp.sh
+      - subl ~/bin/jcp.yaml
+      - echo "Open files at Sublime Text for edit"
+      - echo "Please run these commands after:"
+      - echo "python3 ~/bin/get-jcp.py"
+      - echo "source ~/.zshrc"
+  jcp-regen:
+    commands:    
+      - python3 ~/bin/get-jcp.py
+      - source ~/.zshrc
+
+# Prjects:
+
+  home: # example
+    directory: "~" 
+    commands:
+      - echo "Here is my home dir"
